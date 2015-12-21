@@ -15,19 +15,47 @@
         <!--Angular JS Routing CDN-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.2/angular-route.min.js"></script>
         
+        <!--Scripts-->
         <script src="./app.js"></script>
         <script src="./config.js"></script>
         
-        <h2>
-            Hello world!
-        </h2>
+        <div class="container-fluid">
+            <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <a class="navbar-brand page-scroll" href="#page-top">Anthony Classon</a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a class="page-scroll" href="#/about">About</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#/coursework">Coursework</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#/resume">Resume</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#/contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </div>
         
     </head>
     <body>
         <div class="container-fluid">
-            <p>
-                This will be my personal webpage
-            </p>
+            <div class="row">
+                <div ng-view></div>
+            </div>
         </div>
     </body>
 </html>

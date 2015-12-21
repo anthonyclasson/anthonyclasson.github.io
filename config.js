@@ -5,16 +5,19 @@
     .config(function($routeProvider){
             $routeProvider
                 .when("/home", {
-                    templateUrl: "views/home/home.view.html"
+                    templateUrl: "pages/home.html"
                 })
                 .when("/coursework", {
-                    templateUrl: "pages/coursework.html",
+                    templateUrl: "pages/coursework.html"
                 })
                 .when("/about", {
-                    templateUrl: "pages/about.html",
+                    templateUrl: "pages/about.html"
                 })
                 .when("/resume", {
-                    templateUrl: "pages/resume.html",
+                    templateUrl: "pages/resume.html"
+                })
+                .when("/contact", {
+                    templateUrl: "pages/contact.html"
                 })
                 .otherwise({
                     redirectTo: "/home"
