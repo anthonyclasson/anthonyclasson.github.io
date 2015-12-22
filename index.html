@@ -6,6 +6,9 @@
         <!--Bootstrap CSS CDN-->
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
         
+        <!--jQuery CDN-->
+        <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+        
         <!--Bootstrap JS CDN-->
         <script src ="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         
@@ -22,7 +25,8 @@
     </head>
     <body>
         <div class="container-fluid">
-            <div ng-include="'./pages/header.html'">
+            <div ng-include="'./pages/header.html'"></div>
+            <div class="row">
                 <div ng-view></div>
             </div>
         </div>
